@@ -1,1 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Karen Jeretzy Becerril Moran</title>
+    <style>
+        :root {
+            --pink-dark: #f8bbd0;
+            --pink-light: #fce4ec;
+            --accent: #ad1457;
+            --text: #4a4a4a;
+        }
 
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #fff5f8;
+            color: var(--text);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            background: white;
+            max-width: 800px;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            border-radius: 15px;
+            overflow: hidden;
+        }
+
+        /* Columna Izquierda (Sidebar) */
+        .sidebar {
+            background-color: var(--pink-dark);
+            padding: 30px;
+            color: #444;
+        }
+
+        .photo-space {
+            width: 150px;
+            height: 150px;
+            background: #fff;
+            border: 5px solid white;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-size: 0.8rem;
+            color: #999;
+            overflow: hidden;
+        }
+
+        h2 {
+            font-size: 1.2rem;
+            border-bottom: 2px solid white;
+            padding-bottom: 5px;
+            margin-top: 30px;
+            color: var(--accent);
+        }
+
+        .contact-info p, .skills-list li {
+            font-size: 0.9rem;
+            margin: 10px 0;
+            list-style: none;
+        }
+
+        .progress-bar {
+            background: white;
+            border-radius: 10px;
+            height: 8px;
+            width: 100%;
+            margin-top: 5px;
+        }
+
+        .progress {
+            background: var(--accent);
+            height: 100%;
+            border-radius: 10px;
+        }
+
+        /* Columna Derecha (Main Content) */
+        .main-content {
+            padding: 40px;
+        }
+
+        h1 {
+            margin: 0;
+            color: var(--accent);
+            font-size: 2.2rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            color: #888;
+            margin-bottom: 30px;
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        h3 {
+            color: var(--accent);
+            border-left: 4px solid var(--pink-dark);
+            padding-left: 10px;
+            margin-bottom: 15px;
+        }
+
+        .item {
+            margin-bottom: 15px;
+        }
+
+        .item b {
+            display: block;
+            color: #333;
+        }
+
+        .date {
+            font-size: 0.85rem;
+            color: #ad1457;
+            font-weight: bold;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <aside class="sidebar">
+        <div class="photo-space">
+            <span>Espacio para fotografía</span>
+            </div>
+
+        <h2>CONTACTO</h2>
+        <div class="contact-info">
+            <p>📞 56-32-55-09-97</p>
+            <p>📧 kar200308@gmail.com</p>
+            <p>📱 @Jeret_becerril</p>
+        </div>
+
+        <h2>HABILIDADES</h2>
+        <ul class="skills-list" style="padding:0;">
+            <li>✨ Carismática</li>
+            <li>🎨 Creativa</li>
+            <li>🏃‍♀️ Deportista</li>
+        </ul>
+
+        <h2>IDIOMAS</h2>
+        <div class="contact-info">
+            <p>Español (Nativo)</p>
+            <p>Inglés (Intermedio 40%)</p>
+            <div class="progress-bar">
+                <div class="progress" style="width: 40%;"></div>
+            </div>
+        </div>
+    </aside>
+
+    <main class="main-content">
+        <h1>Karen Jeretzy <br> Becerril Moran</h1>
+        <p class="subtitle">Estudiante | Futura Médico Veterinario y Zootecnista</p>
+
+        <section>
+            <h3>SOBRE MÍ</h3>
+            <p>Soy estudiante del último año de preparatoria a punto de iniciar a la universidad como Médico Veterinario y Zootecnista, también practicó profesionalmente taekwondo y soy ayudante en el ayuntamiento de Jiquipilco dirigiendo el grupo de jóvenes y participando en actividades colectivas.</p>
+        </section>
+
+        <section>
+            <h3>ESTUDIOS</h3>
+            <div class="item">
+                <span class="date">2023 - 2026</span>
+                <b>Preparatoria</b>
+            </div>
+            <div class="item">
+                <span class="date">2026 - Presente</span>
+                <b>Universidad (Médico Veterinario y Zootecnista)</b>
+            </div>
+        </section>
+
+        <section>
+            <h3>EXPERIENCIA</h3>
+            <ul>
+                <li>Práctica profesional de Taekwondo</li>
+                <li>Práctica de Fútbol</li>
+                <li>Experiencia con animales (Área Veterinaria)</li>
+                <li>Conocimientos en Premedicina</li>
+                <li>Liderazgo Social (Ayuntamiento de Jiquipilco)</li>
+            </ul>
+        </section>
+    </main>
+</div>
+
+</body>
+</html>
